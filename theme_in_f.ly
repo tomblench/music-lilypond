@@ -148,7 +148,6 @@ lower = \relative c {
 \score {
 \new PianoStaff \with { instrumentName = "Piano" }
   <<
-  \compressEmptyMeasures
     \new Staff = "upper" \upper
     \new Staff = "lower" \lower
   >>
