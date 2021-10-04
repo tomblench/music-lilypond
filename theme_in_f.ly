@@ -24,20 +24,20 @@ upper = \relative c'' {
 
   \resetRelativeOctave c''
 
-  % minor theme
+                                % minor theme
 
   c2.\mp\< (e4) | b2. (e4)\! | f2.\> (e4) | d1\! |
   a2.\< (b4) | c2. (d4) | e2. r4\!   | f4. e16 d16 e2~ | 
 
   \resetRelativeOctave c''
 
-  % transition
+                                % transition
 
   e4\> (d4 c4 b4\!) | <f g c>1\fermata \pp | 
 
   \bar "||"  
 
-  % theme 3
+                                % theme 3
 
   \stemDown
 
@@ -64,24 +64,24 @@ upper = \relative c'' {
   e'4.--\startTextSpan f8-- f2\stopTextSpan |
 
 
-  % theme 1 recap (w/variation) into outro
+                                % theme 1 recap (w/variation) into outro
 
   \resetRelativeOctave c''
 
-  % (first with variation notes)
+                                % (first with variation notes)
   a2.\p (c4)    | g2. (c4) | f,1 | e16 f16 e4. ~ e2    |
   bes'2. (c4) | a2. (f4) | f1 | e16 f16 e4. ~ e4 c4 |  
 
-  % (back to orignal)
+                                % (back to orignal)
   a'2. (c4)    | g2. (a4) | f1 | e16 f16 e4. ~ e2    |
-  % (outro)
+                                % (outro)
 
   \override TextSpanner.bound-details.left.text = "molto rit."
 
   d2.\> e4 | c2. a4 | bes2. c4 | a2. f4 | f2.\startTextSpan e4\! | f1\fermata \stopTextSpan |
 
-  % to make a zero lenght event:
-  % s1*0 \stopTextSpan |  
+                                % to make a zero lenght event:
+                                % s1*0 \stopTextSpan |  
 
 }
 
@@ -105,18 +105,18 @@ lower = \relative c {
 
   \resetRelativeOctave c
 
-  % minor theme
+                                % minor theme
 
   a'8 e'8 a2.  | aes,8 e'8 aes2. | g,8 e'8 g2. | bes,8 g'8 bes2. | 
   \resetRelativeOctave c
   <a' e'>1 | <aes e'>1 | <g e'>1 | << {g'1^~} \\ {bes,1} >> | 
-  % transition
+                                % transition
 
   <<  {g'1} \\ {bes,4 (a4 aes4 g)}  >> | <c, g'>1_\fermata | 
 
-  % theme 3
+                                % theme 3
 
- \resetRelativeOctave c
+  \resetRelativeOctave c
 
 
   f,8 c'8 f8 c8 f,8 c'8 f8 c8        | e,8 c'8 e8 c8 e,8 c'8 e8 c8 |
@@ -133,7 +133,7 @@ lower = \relative c {
 
   \resetRelativeOctave c
   
-  % theme 1 recap into outro
+                                % theme 1 recap into outro
 
   <f c'>1  | <e c'>1 | <d a'>1 | <c g'>1 | 
   <g' d'>1 | <f d'>1 | <c g'>1 | <c g'>1 |
@@ -146,7 +146,7 @@ lower = \relative c {
 }
 
 \score {
-\new PianoStaff \with { instrumentName = "Piano" }
+  \new PianoStaff \with { instrumentName = "Piano" }
   <<
     \new Staff = "upper" \upper
     \new Staff = "lower" \lower
